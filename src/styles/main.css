@@ -67,70 +67,6 @@ html body {
   display: none !important;
 }
 
-/* Nav */
-.nav {
-  padding: 20px 0;
-  border-bottom: 2px solid var(--dark-border);
-  background-color: var(--dark-bg);
-  color: var(--header-text);
-  letter-spacing: normal;
-}
-
-.nav-row {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  column-gap: 30px;
-  row-gap: 20px;
-  flex-wrap: wrap;
-}
-
-.logo {
-  margin-right: auto;
-  color: var(--header-text);
-  font-size: 24px;
-  font-family: "Poppins", sans-serif;
-}
-
-.logo strong {
-  font-weight: 700;
-}
-
-.nav-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  column-gap: 40px;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  row-gap: 10px;
-}
-
-.nav-list__link {
-  color: var(--header-text);
-  transition: opacity 0.2s ease-in;
-}
-
-.nav-list__link:hover {
-  opacity: 0.8;
-}
-
-.nav-list__link--active {
-  position: relative;
-}
-
-.nav-list__link--active::before {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 100%;
-  background-color: var(--accent);
-  position: absolute;
-  left: 0;
-  top: 100%;
-}
-
 /* Dark mode btn */
 .dark-mode-btn {
   order: 9;
@@ -170,54 +106,6 @@ html body {
 .dark-mode__icon {
   position: relative;
   z-index: 9;
-}
-
-/* Header */
-.header {
-  padding: 45px 0;
-  min-height: 695px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--dark-bg);
-  color: var(--header-text);
-  text-align: center;
-  background-image: url("./../img/projects/header-bg.png");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center center;
-}
-
-.header__wrapper {
-  padding: 0 15px;
-  max-width: 660px;
-}
-
-.header__title {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 1.4;
-  margin-bottom: 20px;
-}
-
-.header__title strong {
-  font-size: 60px;
-  font-weight: 700;
-}
-
-.header__title em {
-  font-style: normal;
-  color: var(--accent);
-}
-
-.header__text {
-  margin-bottom: 40px;
-  font-size: 18px;
-  line-height: 1.333;
-}
-
-.header__text p + p {
-  margin-top: 0.5em;
 }
 
 /* Buttom */

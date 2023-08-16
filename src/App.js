@@ -1,4 +1,4 @@
-import "./styles/main.css"
+import "./styles/main.css";
 
 
 import vk from "./img/icons/vk.svg";
@@ -8,6 +8,7 @@ import gitHub from "./img/icons/gitHub.svg";
 import linkedIn from "./img/icons/linkedIn.svg";
 
 import Navbar from "./components/navbar/Navbar";
+import Header from "./components/header/Header";
 
 function App() {
 
@@ -16,20 +17,7 @@ function App() {
 
       <Navbar />
 
-      <header className="header">
-        <div className="header__wrapper">
-          <div className="header__container">
-            <h1 className="header__title">
-              <strong>Hi, my name is <em>Adrian</em></strong><br />
-              a frontend developer<br />
-            </h1>
-            <div className="header__text">
-              <p>with passion for learning and creating.</p>
-            </div>
-            <a href="#!" className="btn">Download CV</a>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       <main className="section">
         <div className="container">
