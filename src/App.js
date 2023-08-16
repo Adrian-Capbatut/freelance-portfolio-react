@@ -1,121 +1,104 @@
 import "./styles/main.css"
 
 
+import vk from "./img/icons/vk.svg";
+import instagram from "./img/icons/instagram.svg";
+import twitter from "./img/icons/twitter.svg";
+import gitHub from "./img/icons/gitHub.svg";
+import linkedIn from "./img/icons/linkedIn.svg";
 
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
 
   return (
     <div className="App">
 
-      <nav class="nav">
-        <div class="container">
-          <div class="nav-row">
-            <a href="./index.html" class="logo"><strong>Freelancer</strong> portfolio</a>
+      <Navbar />
 
-            <button class="dark-mode-btn">
-              <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode__icon" />
-              <img src="./img/icons/Moon.svg" alt="Dark mode" class="dark-mode__icon" />
-            </button>
-
-            <ul class="nav-list">
-              <li class="nav-list__item">
-                <a href="index.html" class="nav-list__link nav-list__link--active">Projects</a>
-              </li>
-              <li class="nav-list__item">
-                <a href="skills.html" class="nav-list__link">Skills</a>
-              </li>
-              <li class="nav-list__item">
-                <a href="contacts.html" class="nav-list__link">Contacts</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <header class="header">
-        <div class="header__wrapper">
-          <div class="header__container">
-            <h1 class="header__title">
-              <strong>Hi, my name is <em>Yuri</em></strong><br />
+      <header className="header">
+        <div className="header__wrapper">
+          <div className="header__container">
+            <h1 className="header__title">
+              <strong>Hi, my name is <em>Adrian</em></strong><br />
               a frontend developer<br />
             </h1>
-            <div class="header__text">
+            <div className="header__text">
               <p>with passion for learning and creating.</p>
             </div>
-            <a href="#!" class="btn">Download CV</a>
+            <a href="#!" className="btn">Download CV</a>
           </div>
         </div>
       </header>
 
-      <main class="section">
-        <div class="container">
-          <h2 class="title-1">Projects</h2>
-          <ul class="projects">
-            <li class="project">
+      <main className="section">
+        <div className="container">
+          <h2 className="title-1">Projects</h2>
+          <ul className="projects">
+            <li className="project">
               <a href="./project-page.html">
-                <img src="./img/projects/01.jpg" alt="Gaming streaming portal" class="project__img" />
-                <h3 class="project__title">Gaming streaming portal</h3>
+                <img src="./img/projects/01.jpg" alt="Gaming streaming portal" className="project__img" />
+                <h3 className="project__title">Gaming streaming portal</h3>
               </a>
             </li>
-            <li class="project">
+            <li className="project">
               <a href="./project-page.html">
-                <img src="./img/projects/02.jpg" alt="Video service" class="project__img" />
-                <h3 class="project__title">Video service</h3>
+                <img src="./img/projects/02.jpg" alt="Video service" className="project__img" />
+                <h3 className="project__title">Video service</h3>
               </a>
             </li>
-            <li class="project">
+            <li className="project">
               <a href="./project-page.html">
-                <img src="./img/projects/03.jpg" alt="Video portal" class="project__img" />
-                <h3 class="project__title">Video portal</h3>
+                <img src="./img/projects/03.jpg" alt="Video portal" className="project__img" />
+                <h3 className="project__title">Video portal</h3>
               </a>
             </li>
-            <li class="project">
+            <li className="project">
               <a href="./project-page.html">
-                <img src="./img/projects/04.jpg" alt="Dating app" class="project__img" />
-                <h3 class="project__title">Dating app</h3>
+                <img src="./img/projects/04.jpg" alt="Dating app" className="project__img" />
+                <h3 className="project__title">Dating app</h3>
               </a>
             </li>
-            <li class="project">
+            <li className="project">
               <a href="./project-page.html">
-                <img src="./img/projects/05.jpg" alt="Landing" class="project__img" />
-                <h3 class="project__title">Landing</h3>
+                <img src="./img/projects/05.jpg" alt="Landing" className="project__img" />
+                <h3 className="project__title">Landing</h3>
               </a>
             </li>
-            <li class="project">
+            <li className="project">
               <a href="./project-page.html">
-                <img src="./img/projects/06.jpg" alt="Gaming community" class="project__img" />
-                <h3 class="project__title">Gaming community</h3>
+                <img src="./img/projects/06.jpg" alt="Gaming community" className="project__img" />
+                <h3 className="project__title">Gaming community</h3>
               </a>
             </li>
           </ul>
         </div>
       </main>
 
-      <footer class="footer">
-        <div class="container">
-          <div class="footer__wrapper">
-            <ul class="social">
-              <li class="social__item">
-                <a href="#!"> <img src="./img/icons/vk.svg" alt="Link" /></a>
+      <footer className="footer">
+        <div className="container">
+          <div className="footer__wrapper">
+            <ul className="social">
+              <li className="social__item">
+                <a href="#!"> <img src={vk} alt="Link" /></a>
               </li>
-              <li class="social__item">
+              <li className="social__item">
                 <a href="#!">
-                  <img src="./img/icons/instagram.svg" alt="Link" /></a>
+                  <img src={instagram} alt="Link" /></a>
               </li>
-              <li class="social__item">
-                <a href="#!"> <img src="./img/icons/twitter.svg" alt="Link" /></a>
+              <li className="social__item">
+                <a href="#!"> <img src={twitter} alt="Link" /></a>
               </li>
-              <li class="social__item">
-                <a href="#!"> <img src="./img/icons/gitHub.svg" alt="Link" /></a>
+              <li className="social__item">
+                <a href="#!"> <img src={gitHub} alt="Link" /></a>
               </li>
-              <li class="social__item">
+              <li className="social__item">
                 <a href="#!">
-                  <img src="./img/icons/linkedIn.svg" alt="Link" /></a>
+                  <img src={linkedIn} alt="Link" /></a>
               </li>
             </ul>
-            <div class="copyright">
-              <p>© 2022 frontend-dev.com</p>
+            <div className="copyright">
+              <p>© 2023 frontend-dev.com</p>
             </div>
           </div>
         </div>
