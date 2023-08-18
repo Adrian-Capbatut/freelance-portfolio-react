@@ -1,7 +1,5 @@
-import sun from "./../../img/icons/sun.svg";
-import Moon from "./../../img/icons/Moon.svg";
-
 import { NavLink } from "react-router-dom";
+import BtnDarkMode from "../btnDarkMode/BtnDarkMode";
 
 import "./style.css"
 
@@ -19,10 +17,7 @@ const Navbar = () => {
                         <strong>Freelancer</strong> portfolio
                     </NavLink>
 
-                    <button className="dark-mode-btn">
-                        <img src={sun} alt="Light mode" className="dark-mode__icon" />
-                        <img src={Moon} alt="Dark mode" className="dark-mode__icon" />
-                    </button>
+                    <BtnDarkMode />
 
                     <ul className="nav-list">
 
